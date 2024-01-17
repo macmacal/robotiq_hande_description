@@ -8,7 +8,7 @@ def generate_launch_description():
     ld = LaunchDescription()
 
     pkg_path = FindPackageShare('robotiq_hande_description')
-    model_path = PathJoinSubstitution(['urdf', 'robotiq_hande_gripper.xacro'])
+    model_path = PathJoinSubstitution(['urdf', 'hande_preview.urdf.xacro'])
     rviz_config_path = PathJoinSubstitution([pkg_path, 'rviz', 'urdf.rviz'])
     run_joint_state_publisher_gui = 'true'
 
