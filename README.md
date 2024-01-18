@@ -20,6 +20,9 @@ In your URDF (Xacro) file include the Hand-E definition. Provide a parent link (
 
 An example usage can be find in the [urdf/hande_preview.urdf.xacro](./urdf/hande_preview.urdf.xacro) file.
 
+> **Note**:
+> The TF frame of the end tip of the gripper is called `${prefix}hande_end`, where `${prefix}` evaluates as the second macro paramater.
+
 ## Preview
 
 1. Build the package with `colcon` and source it:
