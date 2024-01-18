@@ -16,7 +16,7 @@
     <joint name="robotiq_coupler_joint" type="fixed">
       <origin xyz="0 0 0.00695" rpy="0 0 ${-pi/2.0}" />
       <parent link="${parent}"/>
-      <child link="robotiq_coupler"/>
+      <child link="${prefix}robotiq_coupler"/>
     </joint>
 
     <link name="${prefix}robotiq_coupler">
