@@ -9,14 +9,14 @@
 
         <xacro:unless value="${use_fake_hardware}">
           <plugin>robotiq_hande_driver/RobotiqHandeHardwareInterface</plugin>
-          <param name="grip_pos_min">"${grip_pos_min}"</param>
-          <param name="grip_pos_max">"${grip_pos_max}"</param>
-          <param name="tty">"${tty}"</param>
-          <param name="baudrate">"${baudrate}"</param>
-          <param name="parity">"${parity}"</param>
-          <param name="data_bits">"${data_bits}"</param>
-          <param name="stop_bit">"${stop_bit}"</param>
-          <param name="slave_id">"${slave_id}"</param>
+          <param name="grip_pos_min">${grip_pos_min}</param>
+          <param name="grip_pos_max">${grip_pos_max}</param>
+          <param name="tty">${tty}</param>
+          <param name="baudrate">${baudrate}</param>
+          <param name="parity">${parity}</param>
+          <param name="data_bits">${data_bits}</param>
+          <param name="stop_bit">${stop_bit}</param>
+          <param name="slave_id">${slave_id}</param>
         </xacro:unless>
       </hardware>
 
