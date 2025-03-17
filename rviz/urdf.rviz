@@ -1,12 +1,12 @@
 Panels:
   - Class: rviz_common/Displays
-    Help Height: 70
+    Help Height: 71
     Name: Displays
     Property Tree Widget:
       Expanded:
         - /RobotModel1
       Splitter Ratio: 0.5
-    Tree Height: 350
+    Tree Height: 364
   - Class: rviz_common/Views
     Expanded:
       - /Current View1
@@ -51,26 +51,26 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        hande_end:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        hande_left_finger:
+        robotiq_hande_coupler:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        hande_link:
+        robotiq_hande_end:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        robotiq_hande_left_finger:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        hande_right_finger:
+        robotiq_hande_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        robotiq_coupler:
+        robotiq_hande_right_finger:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -92,11 +92,11 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-      Marker Scale: 1
+      Marker Scale: 0.20000000298023224
       Name: TF
       Show Arrows: true
       Show Axes: true
-      Show Names: false
+      Show Names: true
       Tree:
         {}
       Update Interval: 0
@@ -116,7 +116,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 0.25885558128356934
+      Distance: 0.34827491641044617
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -131,20 +131,20 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.43999946117401123
+      Pitch: 0.6252040266990662
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 5.107341766357422
+      Yaw: 5.672806739807129
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 922
+  Height: 948
   Hide Left Dock: false
   Hide Right Dock: false
-  QMainWindow State: 000000ff00000000fd00000001000000000000015600000340fc0200000002fb000000100044006900730070006c006100790073010000003d000001e1000000c900fffffffb0000000a00560069006500770073010000022400000159000000a400ffffff000002b40000034000000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd00000001000000000000015600000359fc0200000002fb000000100044006900730070006c006100790073010000003e000001f0000000cb00fffffffb0000000a00560069006500770073010000023400000163000000a500ffffff0000036c0000035900000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
-  Width: 1040
-  X: 4505
+  Width: 1224
+  X: 4454
   Y: 905
