@@ -2,7 +2,11 @@
 ### For the driver, check the [robotiq_hande_driver](https://github.com/AGH-CEAI/robotiq_hande_driver/) package from AGH UST.
 ---
 
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+[![DOI](https://zenodo.org/badge/760425699.svg)](https://doi.org/10.5281/zenodo.15047934)
+
+
 
 This package contains meshes and URDF description of [Robotiq Hand-E gripper](https://robotiq.com/products/hand-e-adaptive-robot-gripper). It was originally developed for integration with Universal Robots e-series (UR5e), however it is be possible to change the coupler model to fit your needs. **PRs are welcome!**
 
