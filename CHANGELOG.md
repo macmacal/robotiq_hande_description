@@ -25,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+* [PR-11](https://github.com/AGH-CEAI/robotiq_hande_description/pull/11) - Parametrized link transform for the gripper.
 * [PR-1](https://github.com/AGH-CEAI/robotiq_hande_description/pull/1) - Configuration parameters for ModbusRTU.
 
 ### Changed

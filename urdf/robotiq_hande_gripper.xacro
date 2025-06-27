@@ -7,7 +7,24 @@
   <xacro:include filename="$(find robotiq_hande_description)/urdf/robotiq_hande_gripper.ros2_control.xacro"/>
   <xacro:include filename="$(find robotiq_hande_description)/urdf/cylinder_inertial.xacro"/>
 
-  <xacro:macro name="robotiq_hande_gripper" params="name prefix parent grip_pos_min grip_pos_max tty baudrate parity data_bits stop_bit slave_id use_fake_hardware coupler_mass:=0.119">
+  <xacro:macro
+    name="robotiq_hande_gripper"
+    params="name
+            prefix
+            parent
+            grip_pos_min
+            grip_pos_max
+            tty
+            baudrate
+            parity
+            data_bits
+            stop_bit
+            slave_id
+            use_fake_hardware
+            coupler_mass:=0.119
+            xyz:='0 0 0'
+            rpy:='0 0 0'"
+  >
     <!-- ros2_control parameters  -->
     <xacro:robotiq_hande_ros2_control
       name="${name}"
@@ -36,7 +53,7 @@
     <xacro:arg name="hande_radius" default="0.0375"/>
 
     <joint name="${prefix}robotiq_hande_coupler_joint" type="fixed">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="${xyz}" rpy="${rpy}"/>
       <parent link="${parent}"/>
       <child link="${prefix}robotiq_hande_coupler"/>
     </joint>
