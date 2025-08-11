@@ -9,6 +9,7 @@
   <xacro:arg name="data_bits" default="8"/>
   <xacro:arg name="stop_bit" default="1"/>
   <xacro:arg name="slave_id" default="9"/>
+  <xacro:arg name="frequency_hz" default="10"/>
   <xacro:arg name="use_fake_hardware" default="true"/>
 
   <xacro:include filename="$(find robotiq_hande_description)/urdf/robotiq_hande_gripper.xacro"/>
@@ -26,6 +27,7 @@
     data_bits="$(arg data_bits)"
     stop_bit="$(arg stop_bit)"
     slave_id="$(arg slave_id)"
+    frequency_hz="$(arg frequency_hz)"
     use_fake_hardware="$(arg use_fake_hardware)"
   />
 </robot>

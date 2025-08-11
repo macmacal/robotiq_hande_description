@@ -21,6 +21,7 @@
             stop_bit
             slave_id
             use_fake_hardware
+            frequency_hz:=10
             coupler_mass:=0.119
             xyz:='0 0 0'
             rpy:='0 0 0'"
@@ -37,6 +38,7 @@
       data_bits="${data_bits}"
       stop_bit="${stop_bit}"
       slave_id="${slave_id}"
+      frequency_hz="${frequency_hz}"
       use_fake_hardware="${use_fake_hardware}"
     />
 

@@ -48,6 +48,7 @@ For estabilishg a connection with [robotiq_hande_driver](https://github.com/AGH-
     data_bits="8"
     stop_bit="1"
     slave_id="9"
+    frequency_hz="10"
     use_fake_hardware="false"
   />
 ```
