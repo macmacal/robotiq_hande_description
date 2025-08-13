@@ -42,7 +42,7 @@ For estabilishg a connection with [robotiq_hande_driver](https://github.com/AGH-
     parent="tool0"
     grip_pos_min="0.0"
     grip_pos_max="0.025"
-    tty="/tmp/ttyUR"
+    tty_port="/tmp/ttyUR"
     baudrate="115200"
     parity="N"
     data_bits="8"

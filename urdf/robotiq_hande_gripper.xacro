@@ -14,7 +14,7 @@
             parent
             grip_pos_min
             grip_pos_max
-            tty
+            tty_port
             baudrate
             parity
             data_bits
@@ -32,7 +32,7 @@
       prefix="${prefix}"
       grip_pos_min="${grip_pos_min}"
       grip_pos_max="${grip_pos_max}"
-      tty="${tty}"
+      tty_port="${tty_port}"
       baudrate="${baudrate}"
       parity="${parity}"
       data_bits="${data_bits}"

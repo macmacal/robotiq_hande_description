@@ -3,7 +3,7 @@
   <xacro:arg name="parent" default="tool0"/>
   <xacro:arg name="grip_pos_min" default="0"/>
   <xacro:arg name="grip_pos_max" default="0.025"/>
-  <xacro:arg name="tty" default="/tmp/ttyUR"/>
+  <xacro:arg name="tty_port" default="/tmp/ttyUR"/>
   <xacro:arg name="baudrate" default="115200"/>
   <xacro:arg name="parity" default="N"/>
   <xacro:arg name="data_bits" default="8"/>
@@ -21,7 +21,7 @@
     parent="$(arg parent)"
     grip_pos_min="$(arg grip_pos_min)"
     grip_pos_max="$(arg grip_pos_max)"
-    tty="$(arg tty)"
+    tty_port="$(arg tty_port)"
     baudrate="$(arg baudrate)"
     parity="$(arg parity)"
     data_bits="$(arg data_bits)"
