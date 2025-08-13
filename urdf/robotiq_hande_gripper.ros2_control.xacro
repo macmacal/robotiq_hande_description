@@ -18,6 +18,9 @@
           <param name="stop_bit">${stop_bit}</param>
           <param name="slave_id">${slave_id}</param>
           <param name="frequency_hz">${frequency_hz}</param>
+          <param name="virtual_tty">true</param>
+          <param name="ip_adress">aegis_ur</param>
+          <param name="port">54321</param>
         </xacro:unless>
       </hardware>
 
