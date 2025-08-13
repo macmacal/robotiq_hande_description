@@ -10,6 +10,11 @@
   <xacro:arg name="stop_bit" default="1"/>
   <xacro:arg name="slave_id" default="9"/>
   <xacro:arg name="frequency_hz" default="10"/>
+
+  <xacro:arg name="create_socat_tty" default="false"/>
+  <xacro:arg name="ip_adress" default="192.168.100.10"/>
+  <xacro:arg name="port" default="54321"/>
+
   <xacro:arg name="use_fake_hardware" default="true"/>
 
   <xacro:include filename="$(find robotiq_hande_description)/urdf/robotiq_hande_gripper.xacro"/>
@@ -28,6 +33,9 @@
     stop_bit="$(arg stop_bit)"
     slave_id="$(arg slave_id)"
     frequency_hz="$(arg frequency_hz)"
+    create_socat_tty="$(arg create_socat_tty)"
+    ip_adress="$(arg ip_adress)"
+    port="$(arg port)"
     use_fake_hardware="$(arg use_fake_hardware)"
   />
 </robot>

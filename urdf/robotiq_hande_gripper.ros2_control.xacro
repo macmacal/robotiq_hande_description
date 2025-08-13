@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-  <xacro:macro name="robotiq_hande_ros2_control" params="name prefix grip_pos_min grip_pos_max tty_port baudrate parity data_bits stop_bit slave_id frequency_hz use_fake_hardware">
+  <xacro:macro name="robotiq_hande_ros2_control" params="name prefix grip_pos_min grip_pos_max tty_port baudrate parity data_bits stop_bit slave_id frequency_hz create_socat_tty ip_adress port use_fake_hardware">
     <ros2_control name="${name}" type="system">
       <hardware>
         <xacro:if value="${use_fake_hardware}">
@@ -11,6 +11,7 @@
           <plugin>robotiq_hande_driver/RobotiqHandeHardwareInterface</plugin>
           <param name="grip_pos_min">${grip_pos_min}</param>
           <param name="grip_pos_max">${grip_pos_max}</param>
+          
           <param name="tty_port">${tty_port}</param>
           <param name="baudrate">${baudrate}</param>
           <param name="parity">${parity}</param>
@@ -18,9 +19,11 @@
           <param name="stop_bit">${stop_bit}</param>
           <param name="slave_id">${slave_id}</param>
           <param name="frequency_hz">${frequency_hz}</param>
-          <param name="virtual_tty">true</param>
-          <param name="ip_adress">aegis_ur</param>
-          <param name="port">54321</param>
+
+          <param name="create_socat_tty">${create_socat_tty}</param>
+          <param name="ip_adress">${ip_adress}</param>
+          <param name="port">${port}</param>
+          
         </xacro:unless>
       </hardware>
 
