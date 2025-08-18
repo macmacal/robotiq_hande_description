@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+
+* [PR-14](https://github.com/AGH-CEAI/robotiq_hande_description/pull/14) - Adds new parameters for the ros2_control: `frequency_hz`, `create_socat_tty`, `ip_adress` and `port`.
+
 ### Changed
 ### Deprecated
 ### Removed
