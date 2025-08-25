@@ -12,8 +12,8 @@
   <xacro:arg name="frequency_hz" default="10"/>
 
   <xacro:arg name="create_socat_tty" default="false"/>
-  <xacro:arg name="ip_adress" default="192.168.100.10"/>
-  <xacro:arg name="port" default="54321"/>
+  <xacro:arg name="socat_ip_address" default="192.168.100.10"/>
+  <xacro:arg name="socat_port" default="54321"/>
 
   <xacro:arg name="use_fake_hardware" default="true"/>
 
@@ -34,8 +34,8 @@
     slave_id="$(arg slave_id)"
     frequency_hz="$(arg frequency_hz)"
     create_socat_tty="$(arg create_socat_tty)"
-    ip_adress="$(arg ip_adress)"
-    port="$(arg port)"
+    socat_ip_address="$(arg socat_ip_address)"
+    socat_port="$(arg socat_port)"
     use_fake_hardware="$(arg use_fake_hardware)"
   />
 </robot>

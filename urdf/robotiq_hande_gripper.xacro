@@ -23,8 +23,8 @@
             use_fake_hardware
             frequency_hz:=10
             create_socat_tty:=false
-            ip_adress:=192.168.100.10
-            port:=54321
+            socat_ip_address:=192.168.100.10
+            socat_port:=54321
             coupler_mass:=0.119
             xyz:='0 0 0'
             rpy:='0 0 0'"
@@ -43,8 +43,8 @@
       slave_id="${slave_id}"
       frequency_hz="${frequency_hz}"
       create_socat_tty="${create_socat_tty}"
-      ip_adress="${ip_adress}"
-      port="${port}"
+      socat_ip_address="${socat_ip_address}"
+      socat_port="${socat_port}"
       use_fake_hardware="${use_fake_hardware}"
     />
 
